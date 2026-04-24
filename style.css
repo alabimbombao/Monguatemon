@@ -1,16 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* HERO */
-.hero {
+.seccion-principal {
     min-height: 100vh;
-    background: 
-        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-        url("./fondo.png"); /* CAMBIA por tu imagen */
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("./imagenes/fondo.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,8 +18,8 @@
     flex-direction: column;
 }
 
-/* LOGO DEL HERO */
-.hero-logo {
+
+.logo-central {
     width: 320px;
     height: 320px;
     object-fit: cover;
@@ -28,14 +27,14 @@
 
     margin-bottom: 20px;
 
-    border: 3px solid rgba(82,183,136,0.6);
+    border: 3px solid rgba(82, 183, 136, 0.6);
 
-    background: rgba(82,183,136,0.2);
+    background: rgba(82, 183, 136, 0.2);
     padding: 10px;
 }
 
-/* NAV */
-.nav {
+
+.barra-navegacion {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,44 +45,43 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.nav-logo {
+.enlace-logo {
     display: flex;
     align-items: center;
     gap: 10px;
     text-decoration: none;
 }
 
-.logo-img {
+.imagen-logo {
     width: 50px;
     height: 50px;
     object-fit: contain;
     border-radius: 50%;
 }
 
-.nav-logo span {
+.enlace-logo span {
     color: white;
     font-size: 18px;
     font-weight: bold;
 }
 
-.nav-links a {
+.enlaces-menu a {
     color: white;
-    margin-left: 15px;
+    margin-left: 35px;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
-.nav-links a:hover {
+.enlaces-menu a:hover {
     color: #74c69d;
 }
 
-/* CONTENIDO CENTRAL */
-.hero-content {
+.contenido-principal {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -95,40 +93,39 @@
     padding: 100px 20px 20px 20px;
 }
 
-/* ETIQUETA */
-.hero-badge {
-    background: rgba(82,183,136,0.2);
-    border: 1px solid rgba(82,183,136,0.5);
+
+.etiqueta-ubicacion {
+    background: rgba(82, 183, 136, 0.2);
+    border: 1px solid rgba(82, 183, 136, 0.5);
     padding: 5px 15px;
     border-radius: 20px;
     margin-bottom: 20px;
     font-size: 14px;
 }
 
-/* TITULO */
-.hero-title {
+.titulo-principal {
     font-size: 60px;
     font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
-.hero-title span {
+.titulo-principal span {
     color: #52b788;
     font-style: italic;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
-/* TEXTO */
-.hero-text {
+
+.texto-descripcion {
     max-width: 500px;
     margin: 20px 0;
     font-size: 18px;
     line-height: 1.5;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.9);
 }
 
-/* BOTON */
-.hero-btn {
+
+
+.boton-contacto {
     background: #52b788;
     color: #1a4a2e;
     padding: 12px 25px;
@@ -138,13 +135,180 @@
     margin-top: 10px;
 }
 
-.hero-btn:hover {
+.boton-contacto:hover {
     background: #74c69d;
 }
 
-/* HORARIO */
-.hero-hours {
+
+.texto-horario {
     margin-top: 20px;
     font-size: 14px;
     opacity: 0.8;
+}
+
+/* SECCION INFORMACION */
+#informacion {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.contenedor-info {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.etiqueta-bienvenida {
+    color: #52b788;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.etiqueta-bienvenida::before {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #52b788;
+}
+
+.titulo-info {
+    color: #1a4a2e;
+    /* Verde oscuro */
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.descripcion-info {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 650px;
+    margin-bottom: 50px;
+}
+
+.cuadricula-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* Columna Izquierda - Tarjeta Verde */
+.tarjeta-verde-grande {
+    background-color: #2b5e3c;
+    /* Verde oscuro */
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.tarjeta-verde-grande h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.tarjeta-verde-grande p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #d1f0df;
+}
+
+.cuadricula-pastillas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.pastilla-info {
+    background: rgba(82, 183, 136, 0.15);
+    border: 1px solid rgba(82, 183, 136, 0.3);
+    border-radius: 12px;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #d1f0df;
+}
+
+.columna-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.tarjeta-caracteristica {
+    background-color: #faf8f5;
+    border-left: 5px solid #52b788;
+    border-radius: 12px;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.tarjeta-caracteristica:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+.icono-caracteristica {
+    width: 65px;
+    height: 65px;
+    background-color: transparent; 
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icono-caracteristica img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 15px;
+    display: block;
+}
+
+
+.texto-caracteristica h4 {
+    color: #1a4a2e;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.texto-caracteristica p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .cuadricula-info {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-info {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .cuadricula-pastillas {
+        grid-template-columns: 1fr;
+    }
 }
