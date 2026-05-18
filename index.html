@@ -20,11 +20,10 @@
 
             <div class="enlaces-menu">
                 <a href="#informacion">El Ecoparque</a>
-                <a href="#">Servicios</a>
-                <a href="#">Gastronomía</a>
-                <a href="#">Actividades</a>
-                <a href="#">Ubicación</a>
-                <a href="#">Contacto</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#gastronomia">Gastronomía</a>
+                <a href="#ubicacion">Ubicación</a>
+                <a href="#contacto">Contacto</a>
             </div>
         </div>
 
@@ -143,16 +142,31 @@
 
     <div class="ocio-grid reveal">
       <div class="ocio-card">
-        <span class="ocio-icon">🎯</span>
-        <div class="ocio-name">Bolirana</div>
-        <p class="ocio-desc">Apunta y lanza. Un juego clásico de habilidad y diversión para todas las edades.</p>
-        <span class="ocio-tag">🏆 Alta competencia</span>
+        <div class="ocio-header" style="background-image: url('./imagenes/Juego.png');">
+          <div class="ocio-header-content">
+            <div class="ocio-icon">🎯</div>
+            <div class="ocio-header-text">
+              <div class="ocio-name">Bolirana</div>
+            </div>
+          </div>
+        </div>
+        <div class="ocio-body">
+          <p class="ocio-desc">Apunta y lanza. Un juego clásico de habilidad y diversión para todas las edades.</p>
+        </div>
       </div>
+      
       <div class="ocio-card">
-        <span class="ocio-icon">🏓</span>
-        <div class="ocio-name">Ping Pong</div>
-        <p class="ocio-desc">Reta a tu familia en una emocionante partida de tenis de mesa. ¿Quién ganará?</p>
-        <span class="ocio-tag">⚡ Rápido y emocionante</span>
+        <div class="ocio-header" style="background-image: url('./imagenes/pingpong.png');">
+          <div class="ocio-header-content">
+            <div class="ocio-icon">🏓</div>
+            <div class="ocio-header-text">
+              <div class="ocio-name">Ping Pong</div>
+            </div>
+          </div>
+        </div>
+        <div class="ocio-body">
+          <p class="ocio-desc">Reta a tu familia en una emocionante partida de tenis de mesa. ¿Quién ganará?</p>
+        </div>
       </div>
     </div>
   </div>
@@ -168,10 +182,14 @@
 
     <div class="gastro-grid reveal">
       <div class="gastro-card">
-        <div class="gastro-header">
-          <div class="gastro-icon">🍲</div>
-          <div class="gastro-title">Platos Típicos</div>
-          <div class="gastro-sub">Cocina Santandereana Tradicional</div>
+        <div class="gastro-header" style="background-image: url('./imagenes/comidag.png');">
+          <div class="gastro-header-content">
+            <div class="gastro-icon">🍲</div>
+            <div class="gastro-header-text">
+              <div class="gastro-title">Platos Típicos</div>
+              <div class="gastro-sub">Cocina Santandereana Tradicional</div>
+            </div>
+          </div>
         </div>
         <div class="gastro-body">
           <ul class="dish-list">
@@ -179,22 +197,24 @@
             <li>Mute</li>
             <li>Carne Asada</li>
           </ul>
-          <span class="price-badge">🌶️ Auténtica sazón regional</span>
         </div>
       </div>
 
       <div class="gastro-card">
-        <div class="gastro-header">
-          <div class="gastro-icon">🧒</div>
-          <div class="gastro-title">Menú Infantil</div>
-          <div class="gastro-sub">Especial para los más pequeños</div>
+        <div class="gastro-header" style="background-image: url('./imagenes/comida.jpg');">
+          <div class="gastro-header-content">
+            <div class="gastro-icon">🧒</div>
+            <div class="gastro-header-text">
+              <div class="gastro-title">Menú Infantil</div>
+              <div class="gastro-sub">Especial para los más pequeños</div>
+            </div>
+          </div>
         </div>
         <div class="gastro-body">
           <ul class="dish-list">
             <li>Pierna Pernil o Pechuga</li>
             <li>Papas a la Francesa</li>
           </ul>
-          <span class="price-badge">🌟 ¡Los niños lo aman!</span>
         </div>
       </div>
     </div>
@@ -205,10 +225,104 @@
 <div class="horario-banner">
   <p>⏰ Horario de Atención</p>
   <h2>9:00 AM — 5:00 PM</h2>
-  <span>📅 Todos los días de la semana</span>
 </div>
 
+<!-- UBICACIÓN -->
+<section id="ubicacion" style="padding-top: 80px; background-color: #ffffff;">
+  <div class="section-inner">
+    <div class="section-tag">Ubicación</div>
+    <h2 class="section-title">¿Cómo llegar?</h2>
+    <p class="section-desc">Estamos en un lugar fácil de encontrar en Mogotes, Santander. ¡Te esperamos!</p>
 
+    <div class="ubicacion-grid">
+      <div class="ubicacion-list">
+        <div class="ubicacion-card">
+          <div class="ubicacion-icon">📍</div>
+          <div class="ubicacion-text">
+            <h4>Dirección</h4>
+            <p>Vereda Cabecera, frente al barrio El Progreso, Mogotes, Santander</p>
+          </div>
+        </div>
+
+        <div class="ubicacion-card">
+          <div class="ubicacion-icon">🕒</div>
+          <div class="ubicacion-text">
+            <h4>Horario</h4>
+            <p>Lunes a Domingo<br>9:00 AM a 5:00 PM</p>
+          </div>
+        </div>
+
+        <div class="ubicacion-card">
+          <div class="ubicacion-icon">🚗</div>
+          <div class="ubicacion-text">
+            <h4>Cómo llegar</h4>
+            <p>Desde el centro de Mogotes, dirígete a la Vereda Cabecera. Al frente del barrio El Progreso encontrarás el Ecoparque.</p>
+          </div>
+        </div>
+
+        <div class="ubicacion-card ubicacion-card-green">
+          <div class="ubicacion-icon">🗺️</div>
+          <div class="ubicacion-text">
+            <h4>Ver en Google Maps</h4>
+            <p>Toca aquí para abrir las indicaciones en tu teléfono</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mapa-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.3569211970967!2d-72.96912142597199!3d6.47639652371093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e69bd0371979f15%3A0x50a8ff571897e4af!2sEcoparque%20Monguatemon!5e0!3m2!1ses-419!2sco!4v1779067653677!5m2!1ses-419!2sco" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="contacto-header">
+    <div class="section-tag section-tag-center">CONTACTO</div>
+    <h2 class="section-title">¡Visítanos pronto!</h2>
+    <p class="section-desc">Estamos listos para recibirte y hacer de tu visita una experiencia memorable. Contáctanos por WhatsApp o llámanos directamente.</p>
+  </div>
+
+  <div class="contacto-list">
+    <div class="contacto-card">
+      <div class="contacto-icon icon-whatsapp">📱</div>
+      <div class="contacto-text">
+        <h4>WhatsApp</h4>
+        <p>Escríbenos directamente y te respondemos lo más pronto posible</p>
+      </div>
+    </div>
+
+    <div class="contacto-card">
+      <div class="contacto-icon icon-phone">📞</div>
+      <div class="contacto-text">
+        <h4>Número de Contacto</h4>
+        <p>Próximamente disponible</p>
+      </div>
+    </div>
+
+    <div class="contacto-card">
+      <div class="contacto-icon icon-time">⏰</div>
+      <div class="contacto-text">
+        <h4>Horario de Atención</h4>
+        <p>9:00 AM a 5:00 PM · Todos los días</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contacto-btn-wrapper">
+    <a href="#" class="btn-whatsapp">
+  
+    </a>
+  </div>
+</section>
 
 </body>
 
