@@ -988,29 +988,44 @@ body {
     }
 
     .enlaces-menu {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 80%;
-        height: 100vh;
-        background: var(--primary-dark);
+        position: absolute;
+        top: calc(100% + 10px);
+        right: 5vw;
+        width: 250px;
+        height: auto;
+        background: rgba(26, 74, 46, 0.98);
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
+        padding: 20px;
+        border-radius: var(--radius-md);
+        gap: 15px;
         transition: var(--transition);
         z-index: 1000;
-        box-shadow: -10px 0 30px rgba(0,0,0,0.3);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .enlaces-menu.active {
-        right: 0;
+        opacity: 1;
+        pointer-events: all;
+        transform: translateY(0);
     }
 
     .enlaces-menu a {
         margin: 0;
-        font-size: 20px;
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 8px;
+        text-align: left;
+    }
+
+    .enlaces-menu a:hover {
+        background: rgba(255, 255, 255, 0.1);
     }
 
     /* Layouts */
