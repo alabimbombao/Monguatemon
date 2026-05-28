@@ -18,7 +18,14 @@
                 <span>Monguatemon</span>
             </a>
 
-            <div class="enlaces-menu">
+            <!-- Botón del menú móvil -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="enlaces-menu" id="enlaces-menu">
                 <a href="#informacion">El Ecoparque</a>
                 <a href="#servicios">Servicios</a>
                 <a href="#gastronomia">Gastronomía</a>
@@ -260,13 +267,17 @@
           </div>
         </div>
 
-        <div class="ubicacion-card ubicacion-card-green">
+        <a href="https://www.google.com/maps/place/Ecoparque+Monguatemon/@6.4763965,-72.9691214,17z/data=!3m1!4b1!4m6!3m5!1s0x8e69bd0371979f15:0x50a8ff571897e4af!8m2!3d6.4763912!4d-72.9665465!16s%2Fg%2F11h9n4sczn?entry=ttu&g_ep=EgoyMDI2MDUyNS4wIKXMDSoASAFQAw%3D%3D" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="ubicacion-card ubicacion-card-green" 
+           style="text-decoration: none;">
           <div class="ubicacion-icon">🗺️</div>
           <div class="ubicacion-text">
             <h4>Ver en Google Maps</h4>
-            <p>Toca aquí para abrir las indicaciones en tu teléfono</p>
+            <p>Toca aquí para abrir las indicaciones en tu dispositivo</p>
           </div>
-        </div>
+        </a>
       </div>
 
       <div class="mapa-container">
@@ -324,6 +335,24 @@
   </div>
 </section>
 
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const enlacesMenu = document.getElementById('enlaces-menu');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            enlacesMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.enlaces-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                enlacesMenu.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
