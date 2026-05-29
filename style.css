@@ -965,6 +965,46 @@ body {
 
 
 
+/* ── BOTÓN DE IDIOMA ── */
+.btn-lang {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(82, 183, 136, 0.2);
+    border: 1px solid rgba(82, 183, 136, 0.4);
+    color: #ffffff;
+    padding: 7px 14px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    flex-shrink: 0;
+    margin-left: 10px;
+}
+
+.btn-lang:hover {
+    background: rgba(82, 183, 136, 0.4);
+    border-color: rgba(82, 183, 136, 0.7);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(82, 183, 136, 0.3);
+}
+
+.btn-lang:active {
+    transform: scale(0.97);
+}
+
+.btn-lang-globe {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.btn-lang-text {
+    letter-spacing: 0.5px;
+}
+
 /* ── RESPONSIVE ── */
 
 @media (max-width: 1024px) {
