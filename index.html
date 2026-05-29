@@ -26,53 +26,58 @@
             </button>
 
             <div class="enlaces-menu" id="enlaces-menu">
-                <a href="#informacion">El Ecoparque</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#gastronomia">Gastronomía</a>
-                <a href="#ubicacion">Ubicación</a>
-                <a href="#contacto">Contacto</a>
+                <a href="#informacion" data-i18n="nav_ecoparque">El Ecoparque</a>
+                <a href="#servicios" data-i18n="nav_servicios">Servicios</a>
+                <a href="#gastronomia" data-i18n="nav_gastronomia">Gastronomía</a>
+                <a href="#ubicacion" data-i18n="nav_ubicacion">Ubicación</a>
+                <a href="#contacto" data-i18n="nav_contacto">Contacto</a>
             </div>
+
+            <button class="btn-lang" id="btn-lang" aria-label="Cambiar idioma">
+                <span class="btn-lang-globe">🌐</span>
+                <span class="btn-lang-text" id="btn-lang-text">EN</span>
+            </button>
         </div>
 
         <div class="contenido-principal">
             <img src="./imagenes/logosf.png" alt="Logo" class="logo-central">
-            <p class="etiqueta-ubicacion">Mogotes, Santander</p>
+            <p class="etiqueta-ubicacion" data-i18n="hero_location">Mogotes, Santander</p>
 
             <h1 class="titulo-principal">
                 Ecoparque <br>
                 <span>Monguatemon</span>
             </h1>
 
-            <p class="texto-descripcion">
+            <p class="texto-descripcion" data-i18n="hero_desc">
                 Un espacio natural para compartir en familia. Disfruta de la naturaleza,
                 la mejor gastronomía santandereana y actividades para toda la familia.
             </p>
 
-            <a href="#" class="boton-contacto">📩 Contáctanos</a>
+            <a href="#" class="boton-contacto" data-i18n="hero_contact">📩 Contáctanos</a>
 
-            <p class="texto-horario">🕘 Abierto de 9:00 AM a 5:00 PM</p>
+            <p class="texto-horario" data-i18n="hero_hours">🕘 Abierto de 9:00 AM a 5:00 PM</p>
         </div>
 
     </section>
     <section id="informacion">
         <div class="contenedor-info">
-            <div class="etiqueta-bienvenida">Bienvenidos</div>
-            <h2 class="titulo-info">Un lugar lleno de<br>naturaleza y vida</h2>
-            <p class="descripcion-info">El Ecoparque Monguatemon es un destino familiar único en Mogotes, Santander,
+            <div class="etiqueta-bienvenida" data-i18n="info_welcome">Bienvenidos</div>
+            <h2 class="titulo-info" data-i18n="info_title">Un lugar lleno de<br>naturaleza y vida</h2>
+            <p class="descripcion-info" data-i18n="info_desc">El Ecoparque Monguatemon es un destino familiar único en Mogotes, Santander,
                 rodeado
                 de paisajes naturales y diseñado para ofrecer momentos inolvidables.</p>
 
             <div class="cuadricula-info">
                 <div class="columna-izquierda">
                     <div class="tarjeta-verde-grande">
-                        <h3> - Sobre el Ecoparque</h3>
-                        <p>Ubicado en la Vereda Cabecera, frente al barrio El Progreso, el Ecoparque Monguatemon es el
+                        <h3 data-i18n="info_about_title"> - Sobre el Ecoparque</h3>
+                        <p data-i18n="info_about_desc">Ubicado en la Vereda Cabecera, frente al barrio El Progreso, el Ecoparque Monguatemon es el
                             lugar ideal para escapar de la rutina y conectar con la naturaleza en familia.</p>
                         <div class="cuadricula-pastillas">
-                            <div class="pastilla-info"> 📍 Mogotes, Santander</div>
-                            <div class="pastilla-info"> 🕘 9 AM – 5 PM</div>
-                            <div class="pastilla-info"> 👨‍👩‍👧 Para toda la familia</div>
-                            <div class="pastilla-info"> 🌿 Espacio natural</div>
+                            <div class="pastilla-info" data-i18n="pill_location"> 📍 Mogotes, Santander</div>
+                            <div class="pastilla-info" data-i18n="pill_hours"> 🕘 9 AM – 5 PM</div>
+                            <div class="pastilla-info" data-i18n="pill_family"> 👨‍👩‍👧 Para toda la familia</div>
+                            <div class="pastilla-info" data-i18n="pill_nature"> 🌿 Espacio natural</div>
                         </div>
                     </div>
                 </div>
@@ -83,8 +88,8 @@
                             <img src="./imagenes/piscina.jpg" alt="Piscina">
                         </div>
                         <div class="texto-caracteristica">
-                            <h4>Zona de Piscina</h4>
-                            <p>Disfruta de nuestra piscina en un entorno natural. Perfecta para refrescarte y relajarte.
+                            <h4 data-i18n="feat_pool_title">Zona de Piscina</h4>
+                            <p data-i18n="feat_pool_desc">Disfruta de nuestra piscina en un entorno natural. Perfecta para refrescarte y relajarte.
                             </p>
                         </div>
                     </div>
@@ -93,8 +98,8 @@
                             <img src="./imagenes/comida.jpg" alt="Comida">
                         </div>
                         <div class="texto-caracteristica">
-                            <h4>Gastronomía Típica</h4>
-                            <p>Sabores auténticos de Santander. Desde sancocho hasta carne asada, todo preparado con
+                            <h4 data-i18n="feat_gastro_title">Gastronomía Típica</h4>
+                            <p data-i18n="feat_gastro_desc">Sabores auténticos de Santander. Desde sancocho hasta carne asada, todo preparado con
                                 amor.</p>
                         </div>
                     </div>
@@ -103,8 +108,8 @@
                             <img src="./imagenes/Juego.png" alt="Juegos y Actividades">
                         </div>
                         <div class="texto-caracteristica">
-                            <h4>Juegos y Actividades</h4>
-                            <p>Bolo criollo, bolirana, ping pong y más. Diversión garantizada para grandes y chicos.</p>
+                            <h4 data-i18n="feat_games_title">Juegos y Actividades</h4>
+                            <p data-i18n="feat_games_desc">Bolo criollo, bolirana, ping pong y más. Diversión garantizada para grandes y chicos.</p>
                         </div>
                     </div>
                     <div class="tarjeta-caracteristica">
@@ -112,8 +117,8 @@
                             <img src="./imagenes/familiar.png" alt="Familiar">
                         </div>
                         <div class="texto-caracteristica">
-                            <h4>Ambiente Familiar</h4>
-                            <p>Un espacio pensado para que toda la familia disfrute en un ambiente acogedor y seguro.
+                            <h4 data-i18n="feat_family_title">Ambiente Familiar</h4>
+                            <p data-i18n="feat_family_desc">Un espacio pensado para que toda la familia disfrute en un ambiente acogedor y seguro.
                             </p>
                         </div>
                     </div>
@@ -124,27 +129,27 @@
 <!-- SERVICIOS -->
 <section id="servicios">
   <div class="section-inner">
-    <div class="section-tag">Servicios</div>
-    <h2 class="section-title">Todo lo que tenemos<br>para ti</h2>
-    <p class="section-desc">En el Ecoparque Monguatemon encontrarás diversión acuática y una amplia variedad de juegos de ocio para toda la familia.</p>
+    <div class="section-tag" data-i18n="serv_tag">Servicios</div>
+    <h2 class="section-title" data-i18n="serv_title">Todo lo que tenemos<br>para ti</h2>
+    <p class="section-desc" data-i18n="serv_desc">En el Ecoparque Monguatemon encontrarás diversión acuática y una amplia variedad de juegos de ocio para toda la familia.</p>
 
     <!-- Piscina -->
     <div class="service-spotlight reveal">
       <div class="service-text">
-        <h3>🏊 Piscina</h3>
-        <p>Sumérgete en nuestra piscina y disfruta de un refrescante baño en familia. El plan perfecto para los fines de semana en Mogotes, rodeados de verde y tranquilidad.</p>
+        <h3 data-i18n="serv_pool_title">🏊 Piscina</h3>
+        <p data-i18n="serv_pool_desc">Sumérgete en nuestra piscina y disfruta de un refrescante baño en familia. El plan perfecto para los fines de semana en Mogotes, rodeados de verde y tranquilidad.</p>
       </div>
       <div class="service-perks">
-        <div class="perk"><span class="perk-icon">🌊</span> Agua limpia y tratada</div>
-        <div class="perk"><span class="perk-icon">🌿</span> Entorno natural relajante</div>
-        <div class="perk"><span class="perk-icon">👨‍👩‍👧</span> Apta para toda la familia</div>
-        <div class="perk"><span class="perk-icon">⏱️</span> Abierta 9:00 AM – 5:00 PM</div>
+        <div class="perk" data-i18n="perk_water"><span class="perk-icon">🌊</span> Agua limpia y tratada</div>
+        <div class="perk" data-i18n="perk_nature"><span class="perk-icon">🌿</span> Entorno natural relajante</div>
+        <div class="perk" data-i18n="perk_family"><span class="perk-icon">👨‍👩‍👧</span> Apta para toda la familia</div>
+        <div class="perk" data-i18n="perk_hours"><span class="perk-icon">⏱️</span> Abierta 9:00 AM – 5:00 PM</div>
       </div>
     </div>
 
     <!-- Juegos de Ocio -->
     <div class="servicios-divider">
-      <span>🎯 Juegos de Ocio</span>
+      <span data-i18n="serv_games_divider">🎯 Juegos de Ocio</span>
     </div>
 
     <div class="ocio-grid reveal">
@@ -153,12 +158,12 @@
           <div class="ocio-header-content">
             <div class="ocio-icon">🎯</div>
             <div class="ocio-header-text">
-              <div class="ocio-name">Bolirana</div>
+              <div class="ocio-name" data-i18n="game_bolirana_name">Bolirana</div>
             </div>
           </div>
         </div>
         <div class="ocio-body">
-          <p class="ocio-desc">Apunta y lanza. Un juego clásico de habilidad y diversión para todas las edades.</p>
+          <p class="ocio-desc" data-i18n="game_bolirana_desc">Apunta y lanza. Un juego clásico de habilidad y diversión para todas las edades.</p>
         </div>
       </div>
       
@@ -167,12 +172,12 @@
           <div class="ocio-header-content">
             <div class="ocio-icon">🏓</div>
             <div class="ocio-header-text">
-              <div class="ocio-name">Ping Pong</div>
+              <div class="ocio-name" data-i18n="game_pingpong_name">Ping Pong</div>
             </div>
           </div>
         </div>
         <div class="ocio-body">
-          <p class="ocio-desc">Reta a tu familia en una emocionante partida de tenis de mesa. ¿Quién ganará?</p>
+          <p class="ocio-desc" data-i18n="game_pingpong_desc">Reta a tu familia en una emocionante partida de tenis de mesa. ¿Quién ganará?</p>
         </div>
       </div>
     </div>
@@ -183,9 +188,9 @@
 
 <section id="gastronomia">
   <div class="section-inner">
-    <div class="section-tag">Gastronomía</div>
-    <h2 class="section-title">Sabores de Santander</h2>
-    <p class="section-desc">Disfruta de los platos más representativos de la región, preparados con ingredientes frescos y mucho amor.</p>
+    <div class="section-tag" data-i18n="gastro_tag">Gastronomía</div>
+    <h2 class="section-title" data-i18n="gastro_title">Sabores de Santander</h2>
+    <p class="section-desc" data-i18n="gastro_desc">Disfruta de los platos más representativos de la región, preparados con ingredientes frescos y mucho amor.</p>
 
     <div class="gastro-grid reveal">
       <div class="gastro-card">
@@ -193,16 +198,16 @@
           <div class="gastro-header-content">
             <div class="gastro-icon">🍲</div>
             <div class="gastro-header-text">
-              <div class="gastro-title">Platos Típicos</div>
-              <div class="gastro-sub">Cocina Santandereana Tradicional</div>
+              <div class="gastro-title" data-i18n="gastro_typical_title">Platos Típicos</div>
+              <div class="gastro-sub" data-i18n="gastro_typical_sub">Cocina Santandereana Tradicional</div>
             </div>
           </div>
         </div>
         <div class="gastro-body">
           <ul class="dish-list">
-            <li>Sancocho Santandereano</li>
-            <li>Mute</li>
-            <li>Carne Asada</li>
+            <li data-i18n="dish_sancocho">Sancocho Santandereano</li>
+            <li data-i18n="dish_mute">Mute</li>
+            <li data-i18n="dish_carne">Carne Asada</li>
           </ul>
         </div>
       </div>
@@ -212,15 +217,15 @@
           <div class="gastro-header-content">
             <div class="gastro-icon">🧒</div>
             <div class="gastro-header-text">
-              <div class="gastro-title">Menú Infantil</div>
-              <div class="gastro-sub">Especial para los más pequeños</div>
+              <div class="gastro-title" data-i18n="gastro_kids_title">Menú Infantil</div>
+              <div class="gastro-sub" data-i18n="gastro_kids_sub">Especial para los más pequeños</div>
             </div>
           </div>
         </div>
         <div class="gastro-body">
           <ul class="dish-list">
-            <li>Pierna Pernil o Pechuga</li>
-            <li>Papas a la Francesa</li>
+            <li data-i18n="dish_pierna">Pierna Pernil o Pechuga</li>
+            <li data-i18n="dish_papas">Papas a la Francesa</li>
           </ul>
         </div>
       </div>
@@ -230,40 +235,40 @@
 
 <!-- HORARIO BANNER -->
 <div class="horario-banner">
-  <p>⏰ Horario de Atención</p>
+  <p data-i18n="banner_hours_label">⏰ Horario de Atención</p>
   <h2>9:00 AM — 5:00 PM</h2>
 </div>
 
 <!-- UBICACIÓN -->
 <section id="ubicacion" style="padding-top: 80px; background-color: #ffffff;">
   <div class="section-inner">
-    <div class="section-tag">Ubicación</div>
-    <h2 class="section-title">¿Cómo llegar?</h2>
-    <p class="section-desc">Estamos en un lugar fácil de encontrar en Mogotes, Santander. ¡Te esperamos!</p>
+    <div class="section-tag" data-i18n="loc_tag">Ubicación</div>
+    <h2 class="section-title" data-i18n="loc_title">¿Cómo llegar?</h2>
+    <p class="section-desc" data-i18n="loc_desc">Estamos en un lugar fácil de encontrar en Mogotes, Santander. ¡Te esperamos!</p>
 
     <div class="ubicacion-grid">
       <div class="ubicacion-list">
         <div class="ubicacion-card">
           <div class="ubicacion-icon">📍</div>
           <div class="ubicacion-text">
-            <h4>Dirección</h4>
-            <p>Vereda Cabecera, frente al barrio El Progreso, Mogotes, Santander</p>
+            <h4 data-i18n="loc_address_title">Dirección</h4>
+            <p data-i18n="loc_address_desc">Vereda Cabecera, frente al barrio El Progreso, Mogotes, Santander</p>
           </div>
         </div>
 
         <div class="ubicacion-card">
           <div class="ubicacion-icon">🕒</div>
           <div class="ubicacion-text">
-            <h4>Horario</h4>
-            <p>Lunes a Domingo<br>9:00 AM a 5:00 PM</p>
+            <h4 data-i18n="loc_schedule_title">Horario</h4>
+            <p data-i18n="loc_schedule_desc">Lunes a Domingo<br>9:00 AM a 5:00 PM</p>
           </div>
         </div>
 
         <div class="ubicacion-card">
           <div class="ubicacion-icon">🚗</div>
           <div class="ubicacion-text">
-            <h4>Cómo llegar</h4>
-            <p>Desde el centro de Mogotes, dirígete a la Vereda Cabecera. Al frente del barrio El Progreso encontrarás el Ecoparque.</p>
+            <h4 data-i18n="loc_directions_title">Cómo llegar</h4>
+            <p data-i18n="loc_directions_desc">Desde el centro de Mogotes, dirígete a la Vereda Cabecera. Al frente del barrio El Progreso encontrarás el Ecoparque.</p>
           </div>
         </div>
 
@@ -274,8 +279,8 @@
            style="text-decoration: none;">
           <div class="ubicacion-icon">🗺️</div>
           <div class="ubicacion-text">
-            <h4>Ver en Google Maps</h4>
-            <p>Toca aquí para abrir las indicaciones en tu dispositivo</p>
+            <h4 data-i18n="loc_maps_title">Ver en Google Maps</h4>
+            <p data-i18n="loc_maps_desc">Toca aquí para abrir las indicaciones en tu dispositivo</p>
           </div>
         </a>
       </div>
@@ -297,33 +302,33 @@
 <!-- CONTACTO -->
 <section id="contacto">
   <div class="contacto-header">
-    <div class="section-tag section-tag-center">CONTACTO</div>
-    <h2 class="section-title">¡Visítanos pronto!</h2>
-    <p class="section-desc">Estamos listos para recibirte y hacer de tu visita una experiencia memorable. Contáctanos por WhatsApp o llámanos directamente.</p>
+    <div class="section-tag section-tag-center" data-i18n="contact_tag">CONTACTO</div>
+    <h2 class="section-title" data-i18n="contact_title">¡Visítanos pronto!</h2>
+    <p class="section-desc" data-i18n="contact_desc">Estamos listos para recibirte y hacer de tu visita una experiencia memorable. Contáctanos por WhatsApp o llámanos directamente.</p>
   </div>
 
   <div class="contacto-list">
     <div class="contacto-card">
       <div class="contacto-icon icon-whatsapp">📱</div>
       <div class="contacto-text">
-        <h4>WhatsApp</h4>
-        <p>Escríbenos directamente y te respondemos lo más pronto posible</p>
+        <h4 data-i18n="contact_wa_title">WhatsApp</h4>
+        <p data-i18n="contact_wa_desc">Escríbenos directamente y te respondemos lo más pronto posible</p>
       </div>
     </div>
 
     <div class="contacto-card">
       <div class="contacto-icon icon-phone">📞</div>
       <div class="contacto-text">
-        <h4>Número de Contacto</h4>
-        <p>Próximamente disponible</p>
+        <h4 data-i18n="contact_phone_title">Número de Contacto</h4>
+        <p data-i18n="contact_phone_desc">Próximamente disponible</p>
       </div>
     </div>
 
     <div class="contacto-card">
       <div class="contacto-icon icon-time">⏰</div>
       <div class="contacto-text">
-        <h4>Horario de Atención</h4>
-        <p>9:00 AM a 5:00 PM · Todos los días</p>
+        <h4 data-i18n="contact_hours_title">Horario de Atención</h4>
+        <p data-i18n="contact_hours_desc">9:00 AM a 5:00 PM · Todos los días</p>
       </div>
     </div>
   </div>
@@ -351,6 +356,189 @@
                 menuToggle.classList.remove('active');
                 enlacesMenu.classList.remove('active');
             });
+        });
+
+        /* ── SISTEMA DE IDIOMA (ES / EN) ── */
+        const translations = {
+            es: {
+                nav_ecoparque: 'El Ecoparque',
+                nav_servicios: 'Servicios',
+                nav_gastronomia: 'Gastronomía',
+                nav_ubicacion: 'Ubicación',
+                nav_contacto: 'Contacto',
+                hero_location: 'Mogotes, Santander',
+                hero_desc: 'Un espacio natural para compartir en familia. Disfruta de la naturaleza, la mejor gastronomía santandereana y actividades para toda la familia.',
+                hero_contact: '📩 Contáctanos',
+                hero_hours: '🕘 Abierto de 9:00 AM a 5:00 PM',
+                info_welcome: 'Bienvenidos',
+                info_title: 'Un lugar lleno de<br>naturaleza y vida',
+                info_desc: 'El Ecoparque Monguatemon es un destino familiar único en Mogotes, Santander, rodeado de paisajes naturales y diseñado para ofrecer momentos inolvidables.',
+                info_about_title: ' - Sobre el Ecoparque',
+                info_about_desc: 'Ubicado en la Vereda Cabecera, frente al barrio El Progreso, el Ecoparque Monguatemon es el lugar ideal para escapar de la rutina y conectar con la naturaleza en familia.',
+                pill_location: ' 📍 Mogotes, Santander',
+                pill_hours: ' 🕘 9 AM – 5 PM',
+                pill_family: ' 👨‍👩‍👧 Para toda la familia',
+                pill_nature: ' 🌿 Espacio natural',
+                feat_pool_title: 'Zona de Piscina',
+                feat_pool_desc: 'Disfruta de nuestra piscina en un entorno natural. Perfecta para refrescarte y relajarte.',
+                feat_gastro_title: 'Gastronomía Típica',
+                feat_gastro_desc: 'Sabores auténticos de Santander. Desde sancocho hasta carne asada, todo preparado con amor.',
+                feat_games_title: 'Juegos y Actividades',
+                feat_games_desc: 'Bolo criollo, bolirana, ping pong y más. Diversión garantizada para grandes y chicos.',
+                feat_family_title: 'Ambiente Familiar',
+                feat_family_desc: 'Un espacio pensado para que toda la familia disfrute en un ambiente acogedor y seguro.',
+                serv_tag: 'Servicios',
+                serv_title: 'Todo lo que tenemos<br>para ti',
+                serv_desc: 'En el Ecoparque Monguatemon encontrarás diversión acuática y una amplia variedad de juegos de ocio para toda la familia.',
+                serv_pool_title: '🏊 Piscina',
+                serv_pool_desc: 'Sumérgete en nuestra piscina y disfruta de un refrescante baño en familia. El plan perfecto para los fines de semana en Mogotes, rodeados de verde y tranquilidad.',
+                perk_water: '<span class="perk-icon">🌊</span> Agua limpia y tratada',
+                perk_nature: '<span class="perk-icon">🌿</span> Entorno natural relajante',
+                perk_family: '<span class="perk-icon">👨‍👩‍👧</span> Apta para toda la familia',
+                perk_hours: '<span class="perk-icon">⏱️</span> Abierta 9:00 AM – 5:00 PM',
+                serv_games_divider: '🎯 Juegos de Ocio',
+                game_bolirana_name: 'Bolirana',
+                game_bolirana_desc: 'Apunta y lanza. Un juego clásico de habilidad y diversión para todas las edades.',
+                game_pingpong_name: 'Ping Pong',
+                game_pingpong_desc: 'Reta a tu familia en una emocionante partida de tenis de mesa. ¿Quién ganará?',
+                gastro_tag: 'Gastronomía',
+                gastro_title: 'Sabores de Santander',
+                gastro_desc: 'Disfruta de los platos más representativos de la región, preparados con ingredientes frescos y mucho amor.',
+                gastro_typical_title: 'Platos Típicos',
+                gastro_typical_sub: 'Cocina Santandereana Tradicional',
+                dish_sancocho: 'Sancocho Santandereano',
+                dish_mute: 'Mute',
+                dish_carne: 'Carne Asada',
+                gastro_kids_title: 'Menú Infantil',
+                gastro_kids_sub: 'Especial para los más pequeños',
+                dish_pierna: 'Pierna Pernil o Pechuga',
+                dish_papas: 'Papas a la Francesa',
+                banner_hours_label: '⏰ Horario de Atención',
+                loc_tag: 'Ubicación',
+                loc_title: '¿Cómo llegar?',
+                loc_desc: 'Estamos en un lugar fácil de encontrar en Mogotes, Santander. ¡Te esperamos!',
+                loc_address_title: 'Dirección',
+                loc_address_desc: 'Vereda Cabecera, frente al barrio El Progreso, Mogotes, Santander',
+                loc_schedule_title: 'Horario',
+                loc_schedule_desc: 'Lunes a Domingo<br>9:00 AM a 5:00 PM',
+                loc_directions_title: 'Cómo llegar',
+                loc_directions_desc: 'Desde el centro de Mogotes, dirígete a la Vereda Cabecera. Al frente del barrio El Progreso encontrarás el Ecoparque.',
+                loc_maps_title: 'Ver en Google Maps',
+                loc_maps_desc: 'Toca aquí para abrir las indicaciones en tu dispositivo',
+                contact_tag: 'CONTACTO',
+                contact_title: '¡Visítanos pronto!',
+                contact_desc: 'Estamos listos para recibirte y hacer de tu visita una experiencia memorable. Contáctanos por WhatsApp o llámanos directamente.',
+                contact_wa_title: 'WhatsApp',
+                contact_wa_desc: 'Escríbenos directamente y te respondemos lo más pronto posible',
+                contact_phone_title: 'Número de Contacto',
+                contact_phone_desc: 'Próximamente disponible',
+                contact_hours_title: 'Horario de Atención',
+                contact_hours_desc: '9:00 AM a 5:00 PM · Todos los días'
+            },
+            en: {
+                nav_ecoparque: 'The Ecopark',
+                nav_servicios: 'Services',
+                nav_gastronomia: 'Gastronomy',
+                nav_ubicacion: 'Location',
+                nav_contacto: 'Contact',
+                hero_location: 'Mogotes, Santander',
+                hero_desc: 'A natural space to share with your family. Enjoy nature, the best Santandereana cuisine, and activities for the whole family.',
+                hero_contact: '📩 Contact Us',
+                hero_hours: '🕘 Open from 9:00 AM to 5:00 PM',
+                info_welcome: 'Welcome',
+                info_title: 'A place full of<br>nature and life',
+                info_desc: 'Ecoparque Monguatemon is a unique family destination in Mogotes, Santander, surrounded by natural landscapes and designed to offer unforgettable moments.',
+                info_about_title: ' - About the Ecopark',
+                info_about_desc: 'Located in Vereda Cabecera, in front of the El Progreso neighborhood, Ecoparque Monguatemon is the ideal place to escape the routine and connect with nature as a family.',
+                pill_location: ' 📍 Mogotes, Santander',
+                pill_hours: ' 🕘 9 AM – 5 PM',
+                pill_family: ' 👨‍👩‍👧 For the whole family',
+                pill_nature: ' 🌿 Natural space',
+                feat_pool_title: 'Swimming Pool Area',
+                feat_pool_desc: 'Enjoy our pool in a natural setting. Perfect for cooling off and relaxing.',
+                feat_gastro_title: 'Traditional Cuisine',
+                feat_gastro_desc: 'Authentic flavors of Santander. From sancocho to grilled meat, all prepared with love.',
+                feat_games_title: 'Games & Activities',
+                feat_games_desc: 'Bolo criollo, bolirana, ping pong and more. Fun guaranteed for all ages.',
+                feat_family_title: 'Family Friendly',
+                feat_family_desc: 'A space designed for the whole family to enjoy in a cozy and safe environment.',
+                serv_tag: 'Services',
+                serv_title: 'Everything we have<br>for you',
+                serv_desc: 'At Ecoparque Monguatemon you will find water fun and a wide variety of leisure games for the whole family.',
+                serv_pool_title: '🏊 Swimming Pool',
+                serv_pool_desc: 'Dive into our pool and enjoy a refreshing family swim. The perfect plan for weekends in Mogotes, surrounded by greenery and tranquility.',
+                perk_water: '<span class="perk-icon">🌊</span> Clean and treated water',
+                perk_nature: '<span class="perk-icon">🌿</span> Relaxing natural environment',
+                perk_family: '<span class="perk-icon">👨‍👩‍👧</span> Suitable for the whole family',
+                perk_hours: '<span class="perk-icon">⏱️</span> Open 9:00 AM – 5:00 PM',
+                serv_games_divider: '🎯 Leisure Games',
+                game_bolirana_name: 'Bolirana',
+                game_bolirana_desc: 'Aim and throw. A classic game of skill and fun for all ages.',
+                game_pingpong_name: 'Ping Pong',
+                game_pingpong_desc: 'Challenge your family to an exciting game of table tennis. Who will win?',
+                gastro_tag: 'Gastronomy',
+                gastro_title: 'Flavors of Santander',
+                gastro_desc: 'Enjoy the most representative dishes of the region, prepared with fresh ingredients and lots of love.',
+                gastro_typical_title: 'Traditional Dishes',
+                gastro_typical_sub: 'Traditional Santandereana Cuisine',
+                dish_sancocho: 'Sancocho Santandereano',
+                dish_mute: 'Mute',
+                dish_carne: 'Grilled Meat',
+                gastro_kids_title: "Kids' Menu",
+                gastro_kids_sub: 'Specially made for the little ones',
+                dish_pierna: 'Leg or Breast',
+                dish_papas: 'French Fries',
+                banner_hours_label: '⏰ Opening Hours',
+                loc_tag: 'Location',
+                loc_title: 'How to get here?',
+                loc_desc: 'We are in an easy-to-find location in Mogotes, Santander. We look forward to seeing you!',
+                loc_address_title: 'Address',
+                loc_address_desc: 'Vereda Cabecera, in front of El Progreso neighborhood, Mogotes, Santander',
+                loc_schedule_title: 'Schedule',
+                loc_schedule_desc: 'Monday to Sunday<br>9:00 AM to 5:00 PM',
+                loc_directions_title: 'How to get there',
+                loc_directions_desc: 'From downtown Mogotes, head to Vereda Cabecera. You will find the Ecopark in front of the El Progreso neighborhood.',
+                loc_maps_title: 'View on Google Maps',
+                loc_maps_desc: 'Tap here to open directions on your device',
+                contact_tag: 'CONTACT',
+                contact_title: 'Visit us soon!',
+                contact_desc: 'We are ready to welcome you and make your visit a memorable experience. Contact us via WhatsApp or call us directly.',
+                contact_wa_title: 'WhatsApp',
+                contact_wa_desc: 'Write to us directly and we will respond as soon as possible',
+                contact_phone_title: 'Phone Number',
+                contact_phone_desc: 'Coming soon',
+                contact_hours_title: 'Opening Hours',
+                contact_hours_desc: '9:00 AM to 5:00 PM · Every day'
+            }
+        };
+
+        let currentLang = localStorage.getItem('lang') || 'es';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('lang', lang);
+            document.documentElement.lang = lang;
+
+            const btnText = document.getElementById('btn-lang-text');
+            btnText.textContent = lang === 'es' ? 'EN' : 'ES';
+
+            const btnLang = document.getElementById('btn-lang');
+            btnLang.setAttribute('aria-label', lang === 'es' ? 'Switch to English' : 'Cambiar a Español');
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+        }
+
+        // Init on page load
+        setLanguage(currentLang);
+
+        // Toggle on click
+        document.getElementById('btn-lang').addEventListener('click', () => {
+            setLanguage(currentLang === 'es' ? 'en' : 'es');
         });
     </script>
 </body>
