@@ -1,34 +1,51 @@
+/* =========================================================================
+   VARIABLES GLOBALES (DISEÑO Y TEMA DE COLORES)
+   ========================================================================= */
 :root {
+    /* Colores principales del ecoparque (Verdes y Naturaleza) */
     --primary: #52b788;
     --primary-light: #74c69d;
     --primary-dark: #1a4a2e;
-    --accent: #4a9aba;
+    --accent: #4a9aba; /* Tono de acento azul (zona acuática) */
+    
+    /* Colores neutros */
     --bg-light: #faf8f5;
     --bg-white: #ffffff;
     --text-main: #333;
     --text-muted: #666;
     --white: #ffffff;
+    
+    /* Bordes y efectos */
     --radius-lg: 20px;
     --radius-md: 12px;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Layout y dimensionamiento */
     --section-padding: clamp(40px, 8vw, 80px);
     --container-max: 1200px;
 }
 
+/* =========================================================================
+   RESETEO DE ESTILOS GLOBALES
+   ========================================================================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Desplazamiento suave para navegación interna */
 }
 
 body {
     overflow-x: hidden;
 }
 
+/* =========================================================================
+   SECCIÓN HERO / PRINCIPAL (FONDO Y ESTRUCTURA)
+   ========================================================================= */
 .seccion-principal {
     min-height: 100vh;
+    /* Imagen de fondo con filtro oscuro overlay para garantizar contraste de texto */
     background:
         linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
         url("./imagenes/fondo.png");
@@ -56,11 +73,14 @@ body {
 }
 
 
+/* =========================================================================
+   BARRA DE NAVEGACIÓN SUPERIOR (STICKY / FIXED)
+   ========================================================================= */
 .barra-navegacion {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(26, 74, 46, 0.95);
+    background: rgba(26, 74, 46, 0.95); /* Color oscuro semi-transparente */
     padding: 12px 5vw;
     position: fixed;
     top: 0;
@@ -68,6 +88,7 @@ body {
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    /* Efecto premium de vidrio esmerilado */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
@@ -208,7 +229,9 @@ body {
     opacity: 0.8;
 }
 
-/* SECCION INFORMACION */
+/* =========================================================================
+   SECCIÓN INFORMACIÓN (INTRODUCCIÓN Y MÁS)
+   ========================================================================= */
 #informacion {
     padding: 80px 20px;
     background-color: #ffffff;
@@ -357,7 +380,9 @@ body {
     line-height: 1.5;
 }
 
-/* ── ESTILOS COMUNES DE SECCIÓN ── */
+/* =========================================================================
+   ESTILOS COMUNES DE SECCIÓN (COMPARTIDOS)
+   ========================================================================= */
 .section-inner {
     max-width: var(--container-max);
     margin: 0 auto;
@@ -400,9 +425,12 @@ body {
     margin-bottom: clamp(30px, 5vw, 50px);
 }
 
-/* ── SERVICIOS ── */
+/* =========================================================================
+   SECCIÓN SERVICIOS (PISCINA Y ZONA DE JUEGOS)
+   ========================================================================= */
 #servicios {
     padding: 80px 20px;
+    /* Degradado de fondo para dar sensación de frescura (zona de agua) */
     background:
         radial-gradient(ellipse at 80% 50%, rgba(74, 154, 186, 0.08) 0%, transparent 60%),
         #faf8f5;
@@ -605,7 +633,9 @@ body {
     border-radius: 50px;
 }
 
-/* ── GASTRONOMIA ── */
+/* =========================================================================
+   SECCIÓN GASTRONOMÍA (RESTAURANTE)
+   ========================================================================= */
 #gastronomia {
     padding: 80px 20px;
     margin-bottom: 80px;
@@ -754,7 +784,9 @@ body {
 
 
 
-/* ── HORARIO ── */
+/* =========================================================================
+   BANNER DE HORARIOS
+   ========================================================================= */
 .horario-banner {
     background: linear-gradient(90deg, #1a4a2e 0%, #2d7a4f 100%);
     text-align: center;
@@ -787,7 +819,9 @@ body {
     margin-top: 15px;
 }
 
-/* ── UBICACION TARJETAS Y MAPA ── */
+/* =========================================================================
+   SECCIÓN UBICACIÓN (DIRECCIONES Y MAPA DE GOOGLE)
+   ========================================================================= */
 .ubicacion-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -880,8 +914,9 @@ body {
 }
 
 
-
-/* ── CONTACTO ── */
+/* =========================================================================
+   SECCIÓN CONTACTO (WHATSAPP Y FORMULARIO DE ACCESOS)
+   ========================================================================= */
 #contacto {
     padding: 80px 20px 100px;
     background: radial-gradient(ellipse at center, #fdfffb 0%, #f0f7f2 100%);
@@ -965,7 +1000,9 @@ body {
 
 
 
-/* ── BOTÓN DE IDIOMA ── */
+/* =========================================================================
+   BOTÓN DE CONTROL DE IDIOMA (ACCESIBILIDAD Y DISEÑO)
+   ========================================================================= */
 .btn-lang {
     display: flex;
     align-items: center;
@@ -1005,8 +1042,11 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* ── RESPONSIVE ── */
+/* =========================================================================
+   SECCIONES ADAPTATIVAS (RESPONSIVE DESIGN / MEDIA QUERIES)
+   ========================================================================= */
 
+/* Dispositivos de tamaño mediano (Tablets en horizontal, Laptops pequeñas) */
 @media (max-width: 1024px) {
     .barra-navegacion {
         padding: 10px 4vw;
@@ -1021,8 +1061,9 @@ body {
     }
 }
 
+/* Dispositivos móviles en modo vertical u horizontal y tablets pequeñas */
 @media (max-width: 768px) {
-    /* Navegación Móvil */
+    /* Reconfiguración del Menú para pantallas móviles (Menú de hamburguesa lateral) */
     .menu-toggle {
         display: flex;
     }
@@ -1107,6 +1148,7 @@ body {
     }
 }
 
+/* Teléfonos móviles muy pequeños */
 @media (max-width: 500px) {
     .cuadricula-pastillas {
         grid-template-columns: 1fr;
